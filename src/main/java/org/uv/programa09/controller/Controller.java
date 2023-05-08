@@ -81,7 +81,7 @@ public class Controller {
   }
     //update
     @PutMapping("/empleados/{id}")
-  public DTOEmpleado modificarEmpleado(@PathVariable("id")Long id,
+    public DTOEmpleado modificarEmpleado(@PathVariable("id")Long id,
         @RequestBody DTOEmpleado empleado){
       
       return empleado;
