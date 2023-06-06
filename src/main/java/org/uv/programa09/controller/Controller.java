@@ -91,8 +91,5 @@ public class Controller {
     @DeleteMapping("/empleados")
     public void borrarEmpleado(@PathVariable("id") Long id){
         return;
-    }
-  
-  
-   
+    }  
 }
