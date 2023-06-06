@@ -21,47 +21,59 @@ public class Empleado {
    @Id
    @GeneratedValue(strategy = GenerationType.SEQUENCE)
    @Column(name = "id")
-   private long clave;
+   private long id;
 
     @Column(name="nombre")
-    String nombre;
+    private String nombre;
     
     @Column(name="direccion")
-    String direccion;
+    private String direccion;
     
     @Column(name="telefono")
-    String telefono;
+    private String telefono;
+
+    public Empleado() {
     
-    public long getId() {
-    return clave;
-  }
+    }
     
-     public void setId(int clave) {
-    this.clave = clave;
-  }
-     
+    public Empleado(DTOEmpleado emp) {
+        this.id = emp.getClaveDTO();
+        this.nombre = emp.getNombre();
+        this.direccion = emp.getDireccion();
+        this.telefono = emp.getTelefono();
+    }   
 
     public String getNombre() {
         return nombre;
-    }
-
-    public String getDireccion() {
-        return direccion;
-    }
-
-    public String getTelefono() {
-        return telefono;
     }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
+    public String getDireccion() {
+        return direccion;
+    }
+
     public void setDireccion(String direccion) {
         this.direccion = direccion;
+    }
+
+    public String getTelefono() {
+        return telefono;
     }
 
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    
 }

@@ -4,12 +4,12 @@
  */
 package org.uv.programa09.controller;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
  *
  * @author wbpat
  */
-public interface RepositoryEmpleado extends CrudRepository<Empleado, Long> {
+public interface RepositoryEmpleado extends JpaRepository<Empleado, Long> {
     
 }

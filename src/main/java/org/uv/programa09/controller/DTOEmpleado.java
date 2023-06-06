@@ -9,40 +9,42 @@ package org.uv.programa09.controller;
  * @author wbpat
  */
 public class DTOEmpleado {
-    private long clave;
-    private String nombre;
-    private String direccion;
-    private String telefono;
+    private long idDTO;
+    private String nombreDTO;
+    private String direccionDTO;
+    private String telefonoDTO;
 
-    public long getClave() {
-        return clave;
+    public long getClaveDTO() {
+        return idDTO;
     }
 
-    public void setClave(long clave) {
-        this.clave = clave;
+    public void setClaveDTO(long idDTO) {
+        this.idDTO = idDTO;
     }
 
     public String getNombre() {
-        return nombre;
+        return nombreDTO;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombre(String nombreDTO) {
+        this.nombreDTO = nombreDTO;
     }
 
     public String getDireccion() {
-        return direccion;
+        return direccionDTO;
     }
 
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
+    public void setDireccion(String direccionDTO) {
+        this.direccionDTO = direccionDTO;
     }
 
     public String getTelefono() {
-        return telefono;
+        return telefonoDTO;
     }
 
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
+    public void setTelefono(String telefonoDTO) {
+        this.telefonoDTO = telefonoDTO;
     }
+
+    
 }
