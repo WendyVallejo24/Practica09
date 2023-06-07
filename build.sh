@@ -1,0 +1,1 @@
+docker build -t wendy24/backuv:1.0 .
